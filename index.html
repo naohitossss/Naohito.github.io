@@ -3,10 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>ゲーム作品展示</title>
+    <style>
+        /* ベースのスタイル */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        /* ギャラリーセクション */
+        .gallery {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; /* 要素間の間隔 */
+            padding: 20px;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 80%; /* 幅を調整 */
+            max-width: 1000px; /* 最大幅を設定 */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 50px;
+            height: auto;
+        }
+
+        .gallery-item h2 {
+            margin: 0;
+            padding: 10px;
+            font-size: 18px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+
+        .gallery-item p {
+            padding: 10px;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+            text-align: center; /* テキストを中央揃え */
+        }
+
+        .tech-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 10px 0;
+        }
+
+        .video-link {
+            text-align: center;
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video-link a {
+            font-size: 24px;
+            text-decoration: none;
+            color: #007BFF;
+            margin: 5px 0;
+        }
+
+        .video-link a:hover {
+            text-decoration: underline;
+        }
+
+        .role {
+            margin: 10px auto;
+            padding: 10px;
+            background-color: #fffae5; /* 役割部分の背景色 */
+            border: 1px solid #ffcc00;
+            border-radius: 8px;
+            font-style: normal; /* 斜体を解除 */
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+            max-width: 90%;
+        }
+
+        .role-icon {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>ようこそ！</h1>
-    <p>これは私のGitHub Pagesホームページです。</p>
+    <header>
+        <h1>ゲーム作品展示</h1>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <!-- 個人作品 -->
+            <div class="gallery-item">
+                <div class="tech-icons">
+                    <img src="image/C%23logo.png">
+                    <img src="image/unitylog.png">
+                </div>
+                <h2>Cool Runner (個人作品)</h2>
+                <p>この作品は熱中症をテーマにしたランナーゲームです。</p>
+                <div style="text-align: center;">
+                    <img src="image/CoolRunnerclip.png" style="width: 100%; max-width: 800px; height: auto;">
+                </div>
+                <div class="video-link">
+                    <a href="https://drive.google.com/file/d/1RjtyLtWxNyGD_sEHD696NAGQGF1TB-dD/view?usp=drive_link" target="_blank">プレイ動画を見る</a>
+                    <a href="https://github.com/naohitossss/CoolRunner.git" target="_blank">GitLink(ファイル)</a>
+                    <a href="https://unityroom.com/games/coolrunner" target="_blank">PlayLink(unityroom)</a>
+                </div>
+                
+            </div>
+
+            <!-- チーム作品 -->
+            <div class="gallery-item">
+                <div class="tech-icons">
+                    <img src="image/C++log.png">
+                    <img src="image/siv3dlog.jpg">
+                </div>
+                <h2>○○大戦(個人作品)</h2>
+                <p>この作品はOpenSiv3DというC++のフレームワークを使用したリアルタイム戦略ゲームです。</p>
+                <div style="text-align: center;">
+                    <img src="image/OOWARclip.png" style="width: 100%; max-width: 800px; height: auto;">
+                </div>
+                    <div class="video-link">
+                    <a href="https://drive.google.com/file/d/1sgrI_tRjrrCapQrwnrINRjNi4MxmgreO/view?usp=drive_link" target="_blank">プレイ動画を見る</a>
+                    <a href="https://github.com/naohitossss/OOWAR.git" target="_blank">GitLink&PlayLink</a>
+                </div>
+            </div>
+
+            <!-- チーム作品 -->
+            <div class="gallery-item">
+                <div class="tech-icons">
+                    <img src="image/C%23logo.png">
+                    <img src="image/unitylog.png">
+                </div>
+                <h2>VR運転シミュレータ (チーム作品)</h2>
+                <p>この作品はリアルな運転体験をテーマにしたVRゲームです。</p>
+                <div class="role">
+                    制作メンバー：４人 <br>
+                    私の役割: VR環境構築 ハンドトラッキングの導入
+                </div>
+                <div style="text-align: center;">
+                    <img src="image/drivecpcar.png" style="width: 100%; max-width: 800px; height: auto;">
+                </div>
+                <div class="video-link">
+                    <a href="https://drive.google.com/file/d/1RjtyLtWxNyGD_sEHD696NAGQGF1TB-dD/view?usp=drive_link" target="_blank">プレイ動画を見る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ナオヒト | すべての権利を保有しています。</p>
+    </footer>
 </body>
 </html>
+
+
